@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:orientation="vertical">
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_border"
+        android:elevation="10dp">
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/clickButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginTop="68dp"-->
+        <!--            android:layout_marginEnd="12dp"-->
+        <!--            android:layout_marginBottom="599dp"-->
+        <!--            android:background="#A7DDCE"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:text="Clear All"-->
+        <!--            android:textColor="#000000" />-->
+
+        <ImageView
+            android:id="@+id/ic_magnify"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_magnify" />
+
+        <EditText
+            android:id="@+id/input_search"
+            android:layout_width="298dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_magnify"
+            android:background="@null"
+            android:hint="Enter Address, City or Zip Code"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="0dp"
+        android:text="Clear locations" />
+
+
+</RelativeLayout>
